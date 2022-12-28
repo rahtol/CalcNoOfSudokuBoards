@@ -476,7 +476,8 @@ void span_class_from_one_entry_sixth_level(catalog_entry_t *p_class)
         }
 }
 
-void span_class_from_one_entry_seventh_level_old(catalog_entry_t *p_class)
+// iterative approach for level7 - still buggy - not tested
+void span_class_from_one_entry_seventh_level_iter(catalog_entry_t *p_class)
 {
     catalog_entry_t *p_class_representative = get_class_representative(p_class);
     assert( p_class_representative->p_class == p_class_representative );
